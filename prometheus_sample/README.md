@@ -1,19 +1,19 @@
-Build image for python server
+## Build image for python server
 ```
 docker buildx build . --tag sample-server --platform=linux/amd64
 ```
 
-Run servers
+## Run servers
 ```
 docker-compose up -d
 ```
 
-Get
+## Get
 ```
 curl http://localhost:8080
 ```
 
-Metrics
+## Metrics
 ```
 curl http://localhost:8000/metrics
 ```
