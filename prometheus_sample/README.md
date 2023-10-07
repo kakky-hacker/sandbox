@@ -8,9 +8,14 @@ Run servers
 docker-compose up -d
 ```
 
-Get
+Add request count
 ```
 curl http://localhost:8080
+```
+
+Add Exception count
+```
+curl http://localhost:8080/error
 ```
 
 Metrics
