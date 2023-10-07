@@ -8,12 +8,12 @@ docker buildx build . --tag sample-server --platform=linux/amd64
 docker-compose up -d
 ```
 
-Get
+## Add request count
 ```
 curl http://localhost:8080
 ```
 
-Add Exception count
+## Add exception count
 ```
 curl http://localhost:8080/error
 ```
