@@ -15,6 +15,12 @@ services:
       - ./prometheus:/etc/prometheus/
     ports:
       - 127.0.0.1:9090:9090
+      
+  pushgateway:
+    image: prom/pushgateway:latest
+    container_name: pushgateway
+    ports:
+      - 9091:9091
 
   grafana:
     image: grafana/grafana

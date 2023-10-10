@@ -8,17 +8,17 @@ docker buildx build . --tag sample-server --platform=linux/amd64
 docker-compose up -d
 ```
 
-## Add request count
+## Add request count (metric : http_get_requests_total)
 ```
 curl http://localhost:8080
 ```
 
-## Add exception count
+## Add exception count (metric : exceptions_total)
 ```
 curl http://localhost:8080/error
 ```
 
-## Metrics
+## Push last time a batch job completed (metric : job_last_complete_unixtime)
 ```
-curl http://localhost:8000/metrics
+python job.py
 ```
