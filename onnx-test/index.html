@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwriting Recognition App</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+        #input-canvas-scaled {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Handwriting Recognition Web App</h1>
+    <canvas id="input-canvas" width="280" height="280"></canvas>
+    <canvas id="input-canvas-scaled" width="28" height="28"></canvas>
+    <br>
+    <button onclick="clearCanvas()">Clear Canvas</button>
+    <button onclick="predict()">Predict</button>
+    <p id="prediction"></p>
+    <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
